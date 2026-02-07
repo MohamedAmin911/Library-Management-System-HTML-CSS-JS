@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management System</title>
+    <link rel="stylesheet" href="task.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Library Management System</h1>
+
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+        <div class="section">
+            <h2>Add New Book</h2>
+            <input type="text" id="add-title" placeholder="Book Title">
+            <input type="text" id="add-author" placeholder="Author">
+            <input type="number" id="add-year" placeholder="Year">
+            <button id="add-book-btn">Add Book</button>
+        </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="section">
+            <h2>Remove Book</h2>
+            <input type="number" id="remove-id" placeholder="Book ID">
+            <button id="remove-book-btn">Remove Book</button>
+        </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="section">
+            <h2>Search Books</h2>
+            <input type="text" id="search-query" placeholder="Search by title or author">
+            <button id="search-books-btn">Search</button>
+        </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="section">
+            <h2>Borrow Book</h2>
+            <input type="number" id="borrow-id" placeholder="Book ID">
+            <input type="text" id="borrower-name" placeholder="Your Name">
+            <button id="borrow-book-btn">Borrow Book</button>
+        </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="section">
+            <h2>Return Book</h2>
+            <input type="number" id="return-id" placeholder="Book ID">
+            <button id="return-book-btn">Return Book</button>
+        </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="section">
+            <h2>All Books</h2>
+            <button id="display-all-btn">Refresh Display</button>
+            <div id="books-display" class="books-container"></div>
+        </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <div class="section">
+            <h2>Search Results</h2>
+            <div id="search-results" class="books-container"></div>
+        </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+        <div id="status-message" class="status"></div>
+    </div>
+<!-- ---------------------------------------------------------------------------------------------------------------------- -->
+
+    <script src="task.js">
+        
+    </script>
+</body>
+</html>
